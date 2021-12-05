@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Love+Ya+Like+A+Sister&display=swap');
+
+h1  {
+  background-color: rgb(51, 153, 255, 0.5);
+  background-blend-mode: multiply;
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+h3 {
+  font-size: 35px;
+  letter-spacing: 7px;
+  margin-bottom: 20px;
+}
+
+hr {
+    width: 80%;
+    height: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+body {
+  text-align: center;
+  background-image: url("https://wallpapercave.com/wp/wp4892340.jpg");
+  background-size: cover;
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
+  color: white;
+}
+
+.form
+{
+    display: flex;
+    height:400px;
+    font-size:30pt;
+    font-family: "Amatic SC", cursive;
+}
+
+select {
+  font-family: "Amatic SC", cursive;
+  display: inline;
+}
+
+button {
+  padding: 32px 16px;
+  size: 30;
+  width: 50%;
+  border-style: double;
+  border-color: white;
+  border-width: thick;
+  display: inline-block;
+  color: white;
+  background-color: transparent;
+  font-size: 60px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #3399ff;
+  transition: 0.3s;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: auto;
+  padding: 150px;
+  border-width: 40px;
+  border-style:double;
+  border-color: rgb(255, 239, 189, 0.5);
+  text-align: center;
+  justify-content: center;
+  background-color: #ffe590;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation-name: breathe;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes breathe {
+  0% {padding: 100px;}
+  15% {padding: 115px;}
+  25% {padding: 125px;}
+  50% {padding: 150px;}
+  75% {padding: 125px;}
+  85% {padding: 115px;}
+  100% {padding: 100px;}
+}
+
+p {
+  color: #3399ff;
+}
