@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Love+Ya+Like+A+Sister&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 h1  {
   background-color: rgb(51, 153, 255, 0.5);
   background-blend-mode: multiply;
@@ -49,18 +53,41 @@ select {
 }
 
 button {
-  padding: 32px 16px;
-  size: 30;
-  width: 50%;
+  size: medium;
   border-style: double;
   border-color: white;
   border-width: thick;
-  display: inline-block;
   color: white;
   background-color: transparent;
-  font-size: 60px;
-  border-radius: 12px;
+  font-size: 30px;
+  border-radius: 30px;
   transition: 0.3s;
+}
+
+input {
+    margin-left: 2%;
+  padding: 5px 10px;
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+  border-radius: 30px;
+  border-style: solid;
+}
+
+select {
+    margin-left: 2%;
+    padding: 5px 10px;
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+  border-radius: 30px;
+  border-style: solid;
+}
+
+label {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
 }
 
 button:hover {
@@ -69,9 +96,11 @@ button:hover {
 }
 
 .circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  top: calc(50% - 50px);
+  right: 0;
+  left: 0;
+  bottom: 0;
   width: 300px;
   margin: auto;
   padding: 150px;
@@ -102,5 +131,29 @@ button:hover {
 }
 
 p {
+  margin-left: -60px;
+  margin-top: -60px;
+  text-align:center;
+  position: inherit;
+  font-size: 40px;
   color: #3399ff;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("https://wallpapercave.com/wp/wp4892340.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 20px;
+    display: inline-block;
+  }
+  label {
+    width: 40%;
+  }
+  select {
+    width: 40%;
+  }
+  input {
+    width: 40%;
+  }
+  }

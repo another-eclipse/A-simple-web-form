@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" type="text/css">
     <title>Review your issues. Is everything right?</title>
@@ -15,7 +15,7 @@
     $description = $_REQUEST["description"]; ?>
 
   <?php  echo "<h1>Review your issues. Is everything right?</h1>"; ?>
-    <?php echo "So... You said your username is $username.\n"; ?>
+    <?php echo "So... You said your name is $username.\n"; ?>
     <br>
     <?php echo "Your email is $email.\n"; ?>
     <br>
@@ -27,8 +27,10 @@
     If you've mentioned everything, press "Unburden my mind".
     <br>
     If you've got more issues, go back and add them.
+    <br>
+    <br>
 <form method="get" action="final.php">
-    <button type="submit">Resolve my issues!</button>
+    <button type="submit">Unburden my mind</button>
   </form>
 
 
